@@ -1,0 +1,13 @@
+jobs:
+  - name: cli-test
+    type: runSh
+    steps:
+      - TASK:
+          runtime:
+            options:
+              imageName: "drydock/u14"
+              imageTag: master
+          script:
+         
+            - 
+            - 
