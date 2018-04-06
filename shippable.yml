@@ -13,4 +13,5 @@ jobs:
             - memcached --version
             - cassandra -v
             - riak version
+            - service couchdb start
             - curl http://127.0.0.1:5984  
