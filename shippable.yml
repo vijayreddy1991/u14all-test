@@ -1,13 +1,13 @@
 jobs:
-  - name: cli-test
+  - name: u14all-test
     type: runSh
     steps:
       - TASK:
           runtime:
             options:
-              imageName: "drydock/u14"
+              imageName: "drydock/u14all"
               imageTag: master
           script:
          
-            - 
-            - 
+            - elasticsearch --version
+            - memcached --version
