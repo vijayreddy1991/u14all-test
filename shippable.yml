@@ -1,5 +1,5 @@
 jobs:
-  - name: u14all-test
+  - name: u14all-testing
     type: runSh
     steps:
       - TASK:
