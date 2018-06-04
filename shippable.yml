@@ -2,7 +2,7 @@ jobs:
   - name: u14all-testing
     type: runSh
     steps:
-      - IN: cli-test
+      - IN: u14-testing
       - TASK:
           runtime:
             options:
