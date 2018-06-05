@@ -2,6 +2,7 @@ jobs:
   - name: u14all-testing
     type: runSh
     steps:
+      - IN: u14-testing
       - TASK:
           runtime:
             options:
@@ -26,23 +27,4 @@ jobs:
             - redis-server --version
 
 
-  - name: u14couchdb-test_runCI
-    type: runCI
-    steps:
-      - IN: u14couchdb-test_ciRepo
-      - IN: u14all-testing
-  - name: u14selenium-test_runCI
-    type: runCI
-    steps:
-      - IN: u14selenium-test_ciRepo
-      - IN: u14all-testing
-  - name: u14sqlite-test_runCI
-    type: runCI
-    steps:
-      - IN: u14sqlite-test_ciRepo
-      - IN: u14all-testing
-  - name: u14postgres-test_runCI
-    type: runCI
-    steps:
-      - IN: u14postgres-test_ciRepo
-      - IN: u14all-testing
+  
