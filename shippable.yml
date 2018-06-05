@@ -44,7 +44,9 @@ jobs:
     type: runCI
     steps:
       - IN: u14sqlite-test_ciRepo
+      - IN: u14all-testing
   - name: u14postgres-test_runCI
     type: runCI
     steps:
       - IN: u14postgres-test_ciRepo
+      - IN: u14all-testing
