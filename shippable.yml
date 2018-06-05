@@ -3,6 +3,9 @@ jobs:
     type: runSh
     steps:
       - IN: u14couchdb-test_runCI
+      - IN: u14selenium-test_runCI
+      - IN: u14sqlite-test_runCI
+      - IN: u14postgres-test_runCI
       - TASK:
           runtime:
             options:
@@ -31,4 +34,17 @@ jobs:
     type: runCI
     steps:
       - IN: u14couchdb-test_ciRepo
-      - IN: u14-testing
+      - IN: u14all-testing
+  - name: u14selenium-test_runCI
+    type: runCI
+    steps:
+      - IN: u14selenium-test_ciRepo
+      - IN: u14all-testing
+  - name: u14sqlite-test_runCI
+    type: runCI
+    steps:
+      - IN: u14sqlite-test_ciRepo
+  - name: u14postgres-test_runCI
+    type: runCI
+    steps:
+      - IN: u14postgres-test_ciRepo
