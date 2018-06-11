@@ -25,6 +25,9 @@ jobs:
             - /var/lib/neo4j/bin/neo4j version
             - dpkg -s rabbitmq-server | grep Version
             - redis-server --version
-
+  - name: u14-services_runCI
+    type: runCI
+    steps:
+      - IN: u14-services_ciRepo
 
   
