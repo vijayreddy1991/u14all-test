@@ -29,5 +29,6 @@ jobs:
     type: runCI
     steps:
       - IN: u14-services_ciRepo
+      - IN: u14all-testing
 
   
